@@ -1,0 +1,26 @@
+{
+  "name": "path-existed-or-create",
+  "repository": "git@github.com:sulfureux/path-existed-or-create.git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+    "email": "pierreneter@gmail.com",
+    "name": "pierreneter",
+    "url": "https://github.com/pierreneter"
+  },
+  "homepage": "https://github.com/sulfureux/path-existed-or-create",
+  "license": "MIT",
+  "typings": "./path-existed-or-create.d.ts",
+  "bugs": {
+    "url": "https://github.com/sulfureux/path-existed-or-create/issues",
+    "email": "pierreneter@gmail.com"
+  },
+  "keywords": [
+    "path",
+    "nodejs",
+    "mkdir",
+    "recursive",
+    "existed",
+    "create"
+  ]
+}
