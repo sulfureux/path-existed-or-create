@@ -1,16 +1,19 @@
 var fs = require("fs");
-var compareVersions = require('compare-versions');
+var p = require("path");
+var compareVersions = require("compare-versions");
 
 function pathExistedOrCreate(path) {
+  var nPath = p.resolve(path);
   try {
-    fs.accessSync(path, fs.F_OK);
+    fs.accessSync(nPath, fs.F_OK);
   } catch (e) {
-    fs.mkdirSync(path, { recursive: true });
+    fs.mkdirSync(nPath, { recursive: true });
   }
 }
 
 function pathExistedOrCreateSupportNodeVersionLesser10(path) {
-  var paths = path.split("/");
+  var nPath = p.resolve(path);
+  var paths = nPath.split("/");
   var length = paths.length;
   var currentPath = "";
 

@@ -1,4 +1,4 @@
 declare module "path-existed-or-create" {
-  function pathExistedOrCreate(): void;
+  function pathExistedOrCreate(path: string): void;
   export default pathExistedOrCreate;
 }
